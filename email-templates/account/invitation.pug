@@ -1,14 +1,101 @@
 doctype html
-html
-  body(style='margin: 0;font-family: Tahoma;font-size: 1.2em;background-color: #ECF0F1;')
-    header.text-center(style='padding: 1em;background-color: #202033;margin-bottom: 1em;text-align: center;')
-      .logo(style='max-width: 33.33%;')
-        img(src=logo)
-    .body(style='padding: 1em;margin-right: auto;margin-left: auto;max-width: 500px;color: #2C3E50;')
-      h1(style='font-family: Palatino;font-size: 1.5em;') Hi, #{name}
-      p(style="color: #34495E;")
-        | You have been invited to #{campaign.token_name} ICO platform as #{role}.
-      p(style="color: #34495E;")
-        | Please click on the button below to verify your email address and continue your registration process.
-      a.reset-btn(href=hashLink, style='color: #ffffff;display: block;text-align: center;text-decoration: none;padding: 0.5em;font-size: 1.2em;border: 5px solid #058ffe;border-radius: 3px;margin: 1em;margin-right: auto;margin-left: auto;background-color: #058ffe;') VERIFY EMAIL ADDRESS
+head
+  meta(http-equiv='Content-Type' content='text/html; charset=utf-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  style(type='text/css').
+    img{
+    outline:none;
+    text-decoration:none;
+    -ms-interpolation-mode:bicubic;
+    }
+    a img{
+    border:none;
+    }
+    table td{
+    border-collapse:collapse;
+    }
+    table{
+    border-collapse:collapse;
+    mso-table-lspace:0;
+    mso-table-rspace:0;
+    }
+    @media (max-width: 599px){
+    body{
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    padding:0 !important;
+    }
+    table{
+    border-spacing:0 !important;
+    width:100% !important;
+    }
+    table td{
+    -webkit-box-sizing:border-box;
+    box-sizing:border-box;
+    }
+    .mobile-padding {
+    width: 15px!important;
+    }
+    }
+table(align='center' bgcolor='#f2f4f8' cellpadding='0' cellspacing='0' width='600')
+  tbody
+    tr
+      td
+        table(align='center' bgcolor='#201f33' cellpadding='0' cellspacing='0' width='600')
+          tbody
+            tr(height='15' style='height: 15px;')
+              td &nbsp;
+            tr
+              td(width='15' style='width:15px;') &nbsp;
+              td
+                img(src=logo width='115' alt='Black Insurance' title='Black Insurance')
+            tr(height='15' style='height: 15px;')
+              td &nbsp;
+        table(align='center' cellpadding='0' cellspacing='0' width='595')
+          tbody
+            tr
+              td(height='50' style='height:50px;')
+            tr
+              td.mobile-padding(width='90' style='width:90px;')
+              td
+                h1(style='color:#2c3e50;font-size:1.5rem;font-weight:bold;') Hi, #{name}
+              td.mobile-padding(width='90' style='width:90px;')
+            tr
+              td.mobile-padding(width='90' style='width:90px;')
+              td
+                font(style='color:#34495E;font-size:16px;')
+                  | You have been invited to #{campaign.token_name} ICO platform as #{role}.
+            tr
+              td.mobile-padding(height='10' style='height:10px;')
+            tr 
+              td.mobile-padding(width='90' style='width:90px;')
+              td
+                font(style='color:#34495E;font-size:16px;')
+                  | Please click on the button below to verify your email address and continue your registration process.
+              td.mobile-padding(width='90' style='width:90px;')
+            tr
+              td.mobile-padding(height='20' style='height:20px;')
+            tr
+              td.mobile-padding(width='90' style='width:90px;')
+              td(height='50')
+                a.reset-btn(href=hashLink, style='color: #ffffff;display:block;height:50px;line-height:50px;text-align: center;text-decoration: none;font-size:16px;border: 5px solid #058ffe;border-radius: 3px;background-color: #058ffe;') VERIFY EMAIL ADDRESS
+              td.mobile-padding(width='90' style='width:90px;')
+            tr 
 
+            tr
+              td(height='100' style='height:100px;')
+        table(align='center' cellpadding='0' cellspacing='0' width='595')
+          tbody
+            tr
+              td.mobile-padding(width='90' style='width:90px;')
+              td(style='border-bottom: 1px solid #d3d7e0;font-size: 1px;padding: 0;') &nbsp;
+              td.mobile-padding(width='90' style='width:90px;')
+            tr
+              td(height='20' style='height:20px;')
+            tr
+              td.mobile-padding(width='90' style='width:90px;')
+              td
+                font(style='color:#7b7893;') &copy; 2018 Black Foundation All right reserved
+              td.mobile-padding(width='90' style='width:90px;')
+            tr
+              td(height='100' style='height:100px;')

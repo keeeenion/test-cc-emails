@@ -1,9 +1,9 @@
-const TO_ADDRESS = 'YOUR_EMAIL_HERE'
+const TO_ADDRESS = 'tauno.poks@crowdcoinage.com'
 const domain = 'crowdcoinage.com'
 
 const pug = require('pug')
 const path = require('path')
-const mailgun = require('mailgun-js')({ apiKey: "MAILGUN_KEY_HERE", domain: domain })
+const mailgun = require('mailgun-js')({ apiKey: "key-460a27790e9a48db2db335ab5b7c5010", domain: domain })
 const mailcomposer = require('mailcomposer')
 
 let campaign = {
